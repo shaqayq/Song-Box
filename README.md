@@ -15,6 +15,10 @@
 
 For the live demo click [here](https://63111354be357e514f115d4b--shiny-sprite-86c43c.netlify.app/)
 
+## Project Demo
+![Home Page](https://github.com/shaqayq/Mobile-Zone/blob/project/src/assests/1.PNG)
+![Detail Page](https://github.com/shaqayq/Mobile-Zone/blob/project/src/assests/2.PNG)
+
 ## Authors
 
 👤 **Shaqayq Darwazi**
