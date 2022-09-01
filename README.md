@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-For the live demo click [here]()
+For the live demo click [here](https://63111354be357e514f115d4b--shiny-sprite-86c43c.netlify.app/)
 
 ## Authors
 
@@ -70,4 +70,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [creativecommons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
