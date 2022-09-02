@@ -1,0 +1,25 @@
+@media only screen and (max-width: 640px) {
+  .navbar i {
+    padding: 6px;
+    color: #299bd5;
+    font-size: 21px;
+  }
+
+  .logo {
+    height: 46px;
+  }
+
+  .title {
+    color: #299bd5;
+    font-weight: 900;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .wrapper i {
+    position: absolute;
+  }
+}

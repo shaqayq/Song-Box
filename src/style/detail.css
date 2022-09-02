@@ -1,0 +1,40 @@
+@media only screen and (max-width: 640px) {
+  .detail {
+    margin: 20px;
+  }
+
+  .navbar a {
+    margin-right: auto;
+    color: #e3a939;
+    font-size: 20px;
+  }
+
+  .table {
+    margin-top: 20px;
+  }
+
+  .table td {
+    background-color: #a3d3eb;
+  }
+
+  .detailPhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .detailPhoto:hover {
+    width: 65%;
+  }
+
+  .title {
+    color: #299bd5;
+    font-weight: 900;
+    margin-right: auto;
+  }
+
+  .loading {
+    margin: 42%;
+  }
+}
