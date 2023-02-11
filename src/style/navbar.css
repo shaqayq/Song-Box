@@ -9,6 +9,9 @@
     height: 46px;
   }
 
+  #logo {
+    display: flex;
+  }
   .title {
     color: #299bd5;
     font-weight: 900;
