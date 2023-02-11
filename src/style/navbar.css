@@ -34,6 +34,15 @@
     display: flex;
   }
   
+  #social i{
+    margin: 0 15px 0 17px;
+    color: #329dd7;
+      font-size: 23px;
+  }
+  
+  #social i :hover {
+    color: #fcaa09;
+  }
   .navbar {
     justify-content: space-around;
   }
