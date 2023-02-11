@@ -12,6 +12,7 @@
   #logo {
     display: flex;
   }
+
   .title {
     color: #299bd5;
     font-weight: 900;
@@ -28,26 +29,25 @@
 }
 
 @media only screen and (min-width: 640px) {
-
   .logo {
     width: 4%;
   }
-  
-  #logo{
+
+  #logo {
     display: flex;
   }
-  
-  #social i{
+
+  #social i {
     margin: 0 15px 0 17px;
     color: #329dd7;
-      font-size: 23px;
+    font-size: 23px;
   }
-  
+
   #social i :hover {
     color: #fcaa09;
   }
+
   .navbar {
     justify-content: space-around;
   }
-  
-  }
+}
