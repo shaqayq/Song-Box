@@ -6,8 +6,10 @@ import '../style/navbar.css';
 const Navbar = () => (
   <>
     <nav className="navbar shadow-sm p-3 mb-5 bg-white rounded">
+    <div id='logo'>
       <img src={mobile} className="logo" alt="LOGO" />
       <h4 className="title">Mobile Zone</h4>
+      </div>
       <i>
         {' '}
         <FaInstagram />

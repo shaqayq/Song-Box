@@ -23,3 +23,19 @@
     position: absolute;
   }
 }
+
+@media only screen and (min-width: 640px) {
+
+  .logo {
+    width: 4%;
+  }
+  
+  #logo{
+    display: flex;
+  }
+  
+  .navbar {
+    justify-content: space-around;
+  }
+  
+  }
