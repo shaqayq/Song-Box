@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 
-const PhoneItems = (phone) => {
+const PhoneItems = (song) => {
   // eslint-disable-next-line
-  const { phoneName, phoneImage, detail } = phone.phone;
+  const { song_name , sell_price ,buy_price } = song.song;
 
   return (
 
     <div className="item">
-      <img src={phoneImage} className="photo" alt="mobilePhoto" />
-      <span>{phoneName}</span>
-      <i><Link to={`/phoneDetail/${detail}`} exact="true"><FontAwesomeIcon icon={faArrowAltCircleRight} className="icon" /></Link></i>
+      <img src={song_name} className="photo" alt="mobilePhoto" />
+      <span>{sell_price}</span>
+      {/* <i><Link to={`/phoneDetail/${detail}`} exact="true"><FontAwesomeIcon icon={faArrowAltCircleRight} className="icon" /></Link></i> */}
 
     </div>
 

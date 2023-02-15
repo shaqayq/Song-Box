@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchPhone } from '../store/phone';
-import PhoneItems from './PhoneItems';
+import { fetchSong } from '../store/Song';
+// import PhoneItems from './PhoneItems';
 import '../style/phone.css';
 import Navbar from './Navbar';
 
 const Phone = () => {
-  const phonesList = useSelector((state) => state.phones);
+  
+  const songList = useSelector((state) => state.songs);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (phonesList.length === 0) {
-      dispatch(fetchPhone());
+    if (songList.length === 0) {
+      dispatch(fetchSong());
     }
   });
 
@@ -20,8 +21,8 @@ const Phone = () => {
     <>
       <Navbar />
       <div className="container">
-        {phonesList.map((item) => (
-          <PhoneItems phone={item} key={item.phone_id} />
+        {songList.map((item) => (
+          <PhoneItems song={item} key={item.song_id} />
         ))}
       </div>
 
