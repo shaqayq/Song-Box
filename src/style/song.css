@@ -58,3 +58,19 @@
     width: 24%;
   }
 }
+
+@media only screen and (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    row-gap: 22px;
+    column-gap: 28px;
+  }
+
+  .photo {
+    width: 66%;
+  }
+
+
+}

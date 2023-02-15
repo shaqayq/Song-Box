@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchSong } from '../store/Song';
- import PhoneItems from './PhoneItems';
-import '../style/phone.css';
+ import PhoneItems from './SongItems';
+import '../style/song.css';
 import Navbar from './Navbar';
 
-const Phone = () => {
+const Song = () => {
   
   const songList = useSelector((state) => state.songs);
 
@@ -30,4 +30,4 @@ const Phone = () => {
   );
 };
 
-export default Phone;
+export default Song;
