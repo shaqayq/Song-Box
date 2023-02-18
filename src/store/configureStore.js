@@ -4,7 +4,7 @@ import detailReducer from './detail';
 
 const store = configureStore({
   reducer: {
-    songs:  songReducer,
+    songs: songReducer,
     detail: detailReducer,
   },
 });

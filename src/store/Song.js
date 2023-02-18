@@ -17,29 +17,25 @@ const songReducer = (state = songs, action) => {
 };
 
 export const fetchSong = createAsyncThunk(GET_SONG, async () => {
- 
   const response = await fetch(BaseUrl);
-  
+
   const song = await response.json();
 
-  let id = 0;
   const arrList = [];
-  
-  Object.values(song).forEach((key)=> {
+
+  Object.values(song).forEach((key) => {
     arrList.push({
-      song_id: key.id ,
-      song_name: key["file-name"],
-      buy_price: key["buy-price"],
-      sell_price: key["sell-price"],
+      song_id: key.id,
+      song_name: key['file-name'],
+      buy_price: key['buy-price'],
+      sell_price: key['sell-price'],
       order: key.isOrderable,
       music: key.music_uri,
-      image: key.image_uri
-    })
-  })
+      image: key.image_uri,
+    });
+  });
 
- return arrList;
-
-
+  return arrList;
 });
 
 export default songReducer;

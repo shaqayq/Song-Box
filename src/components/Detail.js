@@ -1,34 +1,31 @@
-import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { useParams, Link } from 'react-router-dom';
-// import '../style/detail.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-// import BeatLoader from 'react-spinners/BeatLoader';
-// import { fetchDetail } from '../store/detail';
-// import mobile from '../assests/mobile.png';
+// // import React, { useEffect } from 'react';
+// import React from 'react';
+// // import { useDispatch, useSelector } from 'react-redux';
+// // import { useParams, Link } from 'react-router-dom';
+// // import '../style/detail.css';
+// // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+// // import BeatLoader from 'react-spinners/BeatLoader';
+// // import { fetchDetail } from '../store/detail';
+// // import mobile from '../assests/mobile.png';
 
-const Detail = () => {
-  // const { phone } = useParams();
+// const Detail = () =>
+// // const { phone } = useParams();
 
-  // const phoneDetail = useSelector((state) => state.detail);
+// // const phoneDetail = useSelector((state) => state.detail);
 
-  // const {
-  //   brand, dimension, os, image, storage, delay,
-  // } = phoneDetail;
+// // const {
+// //   brand, dimension, os, image, storage, delay,
+// // } = phoneDetail;
 
-  // const dispatch = useDispatch();
+// // const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchDetail(phone));
-  // }, [dispatch, phone]);
-
-  return (
-    <>
- 
-
-    </>
-  );
-};
-
-export default Detail;
+// // useEffect(() => {
+// //   dispatch(fetchDetail(phone));
+// // }, [dispatch, phone]);
+//   (
+//     <>
+//       <h1>Hello</h1>
+//     </>
+//   );
+// export default Detail;
