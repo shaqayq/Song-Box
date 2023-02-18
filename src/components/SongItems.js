@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaPlayCircle , FaSmile , FaSadTear} from 'react-icons/fa';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaPlayCircle, FaSmile, FaSadTear } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
 
 const PhoneItems = (song) => {
@@ -8,7 +8,7 @@ const PhoneItems = (song) => {
   /* eslint-disable camelcase */
   const {
     song_name, image, order, music,
-  } = song.song;
+  } = song;
 
   return (
 
@@ -17,20 +17,20 @@ const PhoneItems = (song) => {
       <h5>{song_name}</h5>
       <div id="itemDetails">
 
-      
         <a href={music}>
           Play
-          <FaPlayCircle/>
+          <FaPlayCircle />
         </a>
         <i>
-          IsOrder: 
-          {order ? 
-          <FaSmile/> : <FaSadTear/>}
-         
+          IsOrder:
+          {order
+            ? <FaSmile /> : <FaSadTear />}
+
         </i>
 
       </div>
-      {/* <i><Link to={`/phoneDetail/${detail}`} exact="true"><FontAwesomeIcon icon={faArrowAltCircleRight} className="icon" /></Link></i> */}
+      {/* <i><Link to={`/phoneDetail/${detail}`} exact="true">
+        <FontAwesomeIcon icon={faArrowAltCircleRight} className="icon" /></Link></i>  */}
     </div>
 
   );

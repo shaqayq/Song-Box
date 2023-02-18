@@ -21,7 +21,13 @@ const Song = () => {
       <Navbar />
       <div className="container">
         {songList.map((item) => (
-          <PhoneItems song={item} key={item.song_id} />
+          <PhoneItems
+            name={item.name}
+            image={item.image}
+            order={item.order}
+            music={item.music}
+            key={item.song_id}
+          />
         ))}
       </div>
 

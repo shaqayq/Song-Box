@@ -79,6 +79,10 @@
     background-color: #e37ec80d;;
   }
 
+  .item :hover {
+    width: 68%;
+  }
+
   #itemDetails {
     display: grid;
     grid-template-columns: auto auto;
@@ -94,6 +98,8 @@
   .photo {
     width: 66%;
   }
+
+ 
 
 
 }
