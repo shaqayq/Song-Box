@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import phoneReducer from './phone';
+import songReducer from './Song';
 import detailReducer from './detail';
 
 const store = configureStore({
   reducer: {
-    phones: phoneReducer,
+    songs: songReducer,
     detail: detailReducer,
   },
 });

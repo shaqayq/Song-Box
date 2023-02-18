@@ -9,6 +9,10 @@
     height: 46px;
   }
 
+  #logo {
+    display: flex;
+  }
+
   .title {
     color: #299bd5;
     font-weight: 900;
@@ -21,5 +25,34 @@
 
   .wrapper i {
     position: absolute;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .logo {
+    width: 25%;
+  }
+
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    color: #d76da4;
+  }
+
+  #social i {
+    margin: 0 15px 0 17px;
+    color: #a09ded;
+    font-size: 23px;
+  }
+
+  #social i :hover {
+    color: #fcaa09;
+  }
+
+  .navbar {
+    justify-content: space-around;
   }
 }
