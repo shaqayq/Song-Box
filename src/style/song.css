@@ -76,7 +76,7 @@
     box-shadow: 10px 10px 5px 0 #eaf5fb;
     border-radius: 12px;
     padding: 7px;
-    background-color: #e37ec80d;;
+    background-color: #e37ec80d;
   }
 
   .item :hover {
@@ -89,17 +89,15 @@
     column-gap: 10px;
   }
 
-  #itemDetails a , i{
+  #itemDetails a,
+  i {
     text-decoration: none;
     color: #aa53ef;
     font-weight: 600;
     font-size: 18px;
   }
+
   .photo {
     width: 66%;
   }
-
- 
-
-
 }
