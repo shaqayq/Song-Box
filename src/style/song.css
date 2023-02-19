@@ -7,6 +7,9 @@
     column-gap: 28px;
   }
 
+  #logo{
+     align-items: center;
+  }
   .item {
     display: flex;
     flex-direction: column;
