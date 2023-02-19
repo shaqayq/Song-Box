@@ -16,7 +16,7 @@
     border-radius: 12px;
     padding: 7px;
     width: 174px;
-    background-color: #e8f0ff;
+    background-color: #e37ec80d;
   }
 
   .item span {
@@ -24,6 +24,20 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: auto;
+  }
+
+   #itemDetails {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+
+  #itemDetails a,
+  i {
+    text-decoration: none;
+    color: #aa53ef;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .item:hover {
@@ -73,14 +87,15 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid #c9c9c9;
-    box-shadow: 10px 10px 5px 0 #eaf5fb;
+    box-shadow: 10px 10px 5px 0 #3f050580;
     border-radius: 12px;
     padding: 7px;
     background-color: #e37ec80d;
   }
 
-  .item :hover {
-    width: 68%;
+  .photo :hover {
+    box-shadow: 10px 10px 5px 0 hsl(292, 58%, 74%);
+   
   }
 
   #itemDetails {
