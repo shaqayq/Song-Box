@@ -1,33 +1,36 @@
-import React, { useEffect } from 'react';
-// import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams, Link } from 'react-router-dom';
-import '../style/detail.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import BeatLoader from 'react-spinners/BeatLoader';
-import { fetchDetail } from '../store/detail';
-import mobile from '../assests/mobile.png';
+import React from 'react';
+import { useEffect } from 'react';
+ import { useDispatch, useSelector } from 'react-redux';
+ import { useParams, Link } from 'react-router-dom';
+ import '../style/detail.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+;
+ import { fetchDetail } from '../store/detail';
 
- const Detail = (details) => {
 
-  const {song_name} = details;
+const Detail = () => {
+  /* eslint-disable camelcase */
+   const params= useParams();
+   
+  const details = useSelector((state) => state.detail)
+ 
+  const {name , image , music , order , sell_price , buy_price} = details;
 
-//const songDetail = useSelector((state) => state.song_name);
-
-// const {
-//   brand, dimension, os, image, storage, delay,
-// } = phoneDetail;
-
-// const dispatch = useDispatch();
-
-// useEffect(() => {
-//   dispatch(fetchDetail(phone));
-// }, [dispatch, phone]);
-  (
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(fetchDetail(params.songId))
+  } , [dispatch , params]);
+  
+  return (
     <>
-      <h1>{song_name}</h1>
+      <div className='detailCard'>
+        <img src={image}/>
+        <div>
+           
+        </div>
+      </div>
     </>
-);
- }
- export default Detail;
+  );
+};
+export default Detail;
