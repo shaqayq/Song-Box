@@ -26,7 +26,7 @@ const Detail = () => {
   return (
     <>
       <div className='detailCard'>
-        <img src={image}/>
+        <img src={image} className="songPhoto"/>
         <div className='detailsPart'>
            <h4>Sell Price: {sell_price}</h4>
            <h4>Buy Price: {buy_price}</h4>
