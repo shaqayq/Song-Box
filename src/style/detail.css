@@ -74,11 +74,12 @@
     justify-content: center;
   }
 
-  .detailsPart h5 , h4 {
-    color:#ff3c33a3
+  .detailsPart h5,
+  h4 {
+    color: #ff3c33a3;
   }
 
-  #backArrow{
+  #backArrow {
     margin: auto;
     width: 50%;
     font-size: 26px;

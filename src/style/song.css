@@ -7,9 +7,10 @@
     column-gap: 28px;
   }
 
-  #logo{
-     align-items: center;
+  #logo {
+    align-items: center;
   }
+
   .item {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@
     margin-bottom: auto;
   }
 
-   #itemDetails {
+  #itemDetails {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;
@@ -98,7 +99,6 @@
 
   .photo :hover {
     box-shadow: 10px 10px 5px 0 hsl(292, 58%, 74%);
-   
   }
 
   #itemDetails {

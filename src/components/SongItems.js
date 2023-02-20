@@ -10,7 +10,7 @@ const PhoneItems = (song) => {
   // eslint-disable-next-line
   /* eslint-disable camelcase */
   const {
-    name, image, order,id
+    name, image, order, id,
   } = song;
 
   return (
