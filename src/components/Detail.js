@@ -4,10 +4,10 @@ import { useEffect } from 'react';
  import { useParams, Link } from 'react-router-dom';
  import '../style/detail.css';
  import ReactAudioPlayer from 'react-audio-player';
+ import {FaRegGrinAlt , FaRegFrown, FaArrowLeft} from 'react-icons/fa'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-;
  import { fetchDetail } from '../store/detail';
+ import { BeatLoader } from 'react-spinners';
 
 
 const Detail = () => {
@@ -16,7 +16,7 @@ const Detail = () => {
    
   const details = useSelector((state) => state.detail)
  
-  const {name , image , music , order , sell_price , buy_price} = details;
+  const {name , image , music , order , sell_price , buy_price , delay} = details;
 
   const dispatch = useDispatch();
   useEffect(()=>{
@@ -25,19 +25,27 @@ const Detail = () => {
   
   return (
     <>
+    
+    <div className='cardContainer'>
+    <Link to="/"><i id='backArrow'><FaArrowLeft/>Back</i></Link>
       <div className='detailCard'>
-        <img src={image} className="songPhoto"/>
+      {delay && (
+        <BeatLoader color="#44beff" className="loading" />
+      )}
+      {!delay &&(<img src={image} className="songPhoto"/>)}
+    
         <div className='detailsPart'>
-           <h4>Sell Price: {sell_price}</h4>
-           <h4>Buy Price: {buy_price}</h4>
-
-           <ReactAudioPlayer
+        {!delay &&(<h4><b>{name}</b></h4>)}
+        {!delay &&( <h5>Sell Price: {sell_price}</h5>)}
+        {!delay &&( <h5>Buy Price: {buy_price}</h5>)}
+           {!delay &&( <h5>IsOrder : <i> {order ? <FaRegFrown/> : <FaRegGrinAlt/>}</i></h5>)}
+            {!delay &&( <ReactAudioPlayer
             src={music}
             controls
-            />
-
+            />)}
         </div>
       </div>
+    </div>
     </>
   );
 };

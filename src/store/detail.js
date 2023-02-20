@@ -11,7 +11,8 @@ const detailReducer = (state = [] , action) => {
     case `${GET_DETAIL}/fulfilled`:
       return action.payload;
 
-    c
+      case `${GET_DETAIL}/pending`:
+        return { ...state, delay: true };
 
     default:
       return state;
