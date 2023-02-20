@@ -27,10 +27,6 @@ const PhoneItems = (song) => {
 
         </i>
 
-        {/* <ReactAudioPlayer
-          src="http://acnhapi.com/v1/music/1"
-          controls
-        /> */}
       </div>
 
     </div>

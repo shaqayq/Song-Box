@@ -3,6 +3,7 @@ import { useEffect } from 'react';
  import { useDispatch, useSelector } from 'react-redux';
  import { useParams, Link } from 'react-router-dom';
  import '../style/detail.css';
+ import ReactAudioPlayer from 'react-audio-player';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 ;
@@ -26,8 +27,15 @@ const Detail = () => {
     <>
       <div className='detailCard'>
         <img src={image}/>
-        <div>
-           
+        <div className='detailsPart'>
+           <h4>Sell Price: {sell_price}</h4>
+           <h4>Buy Price: {buy_price}</h4>
+
+           <ReactAudioPlayer
+            src={music}
+            controls
+            />
+
         </div>
       </div>
     </>
