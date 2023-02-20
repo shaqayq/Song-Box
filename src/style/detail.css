@@ -38,3 +38,50 @@
     margin: 42%;
   }
 }
+
+@media only screen and (min-width: 640px) {
+  .cardContainer {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .cardContainer a {
+    text-decoration: none;
+  }
+
+  .detailCard {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f1b9c5c2;
+    box-shadow: 3px 3px #eb526761;
+    border-radius: 8px;
+    background-color: #f4dff036;
+    margin-top: 8%;
+  }
+
+  .songPhoto {
+    width: 32%;
+    margin: 3%;
+    border-radius: 50%;
+  }
+
+  .detailsPart {
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .detailsPart h5,
+  h4 {
+    color: #ff3c33a3;
+  }
+
+  #backArrow {
+    margin: auto;
+    width: 50%;
+    font-size: 26px;
+  }
+}

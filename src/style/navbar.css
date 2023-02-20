@@ -14,7 +14,7 @@
   }
 
   .title {
-    color: #299bd5;
+    color: #d76da4;
     font-weight: 900;
     margin-right: auto;
   }
@@ -25,6 +25,10 @@
 
   .wrapper i {
     position: absolute;
+  }
+
+  #social i {
+    color: #a09ded;
   }
 }
 

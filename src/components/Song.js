@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchSong } from '../store/Song';
 import PhoneItems from './SongItems';
 import '../style/song.css';
-import Navbar from './Navbar';
 
 const Song = () => {
   const songList = useSelector((state) => state.songs);
@@ -18,14 +17,15 @@ const Song = () => {
 
   return (
     <>
-      <Navbar />
+
       <div className="container">
         {songList.map((item) => (
           <PhoneItems
-            name={item.name}
+            name={item.song_name}
             image={item.image}
             order={item.order}
             music={item.music}
+            id={item.song_id}
             key={item.song_id}
           />
         ))}

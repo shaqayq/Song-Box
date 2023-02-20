@@ -1,31 +1,77 @@
-// // import React, { useEffect } from 'react';
-// import React from 'react';
-// // import { useDispatch, useSelector } from 'react-redux';
-// // import { useParams, Link } from 'react-router-dom';
-// // import '../style/detail.css';
-// // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// // import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-// // import BeatLoader from 'react-spinners/BeatLoader';
-// // import { fetchDetail } from '../store/detail';
-// // import mobile from '../assests/mobile.png';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams, Link } from 'react-router-dom';
+import '../style/detail.css';
+import ReactAudioPlayer from 'react-audio-player';
+import { FaRegGrinAlt, FaRegFrown, FaArrowLeft } from 'react-icons/fa';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BeatLoader } from 'react-spinners';
+import { fetchDetail } from '../store/detail';
 
-// const Detail = () =>
-// // const { phone } = useParams();
+const Detail = () => {
+  /* eslint-disable camelcase */
+  const params = useParams();
 
-// // const phoneDetail = useSelector((state) => state.detail);
+  const details = useSelector((state) => state.detail);
 
-// // const {
-// //   brand, dimension, os, image, storage, delay,
-// // } = phoneDetail;
+  const {
+    name, image, music, order, sell_price, buy_price, delay,
+  } = details;
 
-// // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchDetail(params.songId));
+  }, [dispatch, params]);
 
-// // useEffect(() => {
-// //   dispatch(fetchDetail(phone));
-// // }, [dispatch, phone]);
-//   (
-//     <>
-//       <h1>Hello</h1>
-//     </>
-//   );
-// export default Detail;
+  return (
+    <>
+
+      <div className="cardContainer">
+        <Link to="/">
+          <i id="backArrow">
+            <FaArrowLeft />
+            Back
+          </i>
+        </Link>
+        <div className="detailCard">
+          {delay && (
+          <BeatLoader color="#44beff" className="loading" />
+          )}
+          {!delay && (<img src={image} className="songPhoto" alt="songPhoto" />)}
+
+          <div className="detailsPart">
+            {!delay && (<h4><b>{name}</b></h4>)}
+            {!delay && (
+            <h5>
+              Sell Price:
+              {sell_price}
+            </h5>
+            )}
+            {!delay && (
+            <h5>
+              Buy Price:
+              {buy_price}
+            </h5>
+            )}
+            {!delay && (
+            <h5>
+              IsOrder :
+              <i>
+                {' '}
+                {order ? <FaRegFrown /> : <FaRegGrinAlt />}
+              </i>
+            </h5>
+            )}
+            {!delay && (
+            <ReactAudioPlayer
+              src={music}
+              controls
+            />
+            )}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default Detail;
