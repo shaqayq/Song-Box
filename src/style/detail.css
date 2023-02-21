@@ -1,20 +1,16 @@
 @media only screen and (max-width: 640px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .cardContainer a {
+    margin: 0 0 9px 27px;
+    text-decoration: none;
+  }
   .detail {
     margin: 20px;
-  }
-
-  .navbar a {
-    margin-right: auto;
-    color: #e3a939;
-    font-size: 20px;
-  }
-
-  .table {
-    margin-top: 20px;
-  }
-
-  .table td {
-    background-color: #a3d3eb;
   }
 
   .detailPhoto {
@@ -34,8 +30,40 @@
     margin-right: auto;
   }
 
+  .songPhoto {
+    width: 70%;
+    border-radius: 50%;
+  }
+
+  .detailCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    border: 1px solid #f1b9c5c2;
+    box-shadow: 3px 3px #eb526761;
+    border-radius: 8px;
+    background-color: #f4dff036;
+    width: 86%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 12px 0 10px 0; 
+  }
+
+  .detailsPart h5 {
+    font-size: 86%;
+  }
+
+  .detailsPart h5,
+  h4 {
+    color: #ff3c33a3;
+  } 
   .loading {
     margin: 42%;
+  }
+
+  .react-audio-player  {
+    width: 253px;
   }
 }
 
