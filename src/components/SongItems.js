@@ -19,9 +19,12 @@ const PhoneItems = (song) => {
       <img src={image} className="photo" alt="songPhoto" />
       <h5>{name}</h5>
       <div id="itemDetails">
-        <Link to={`/songDetail/${id}`}><b>Detail</b><FaMusic/></Link>
+        <Link to={`/songDetail/${id}`}>
+          <span>Detail</span>
+          <FaMusic />
+        </Link>
         <i>
-          <b>IsOrder:</b> 
+          <b>IsOrder:</b>
           {order
             ? <FaRegGrinAlt /> : <FaRegFrown />}
 

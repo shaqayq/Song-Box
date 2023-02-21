@@ -19,7 +19,7 @@
     box-shadow: 10px 10px 5px 0 #eaf5fb;
     border-radius: 12px;
     padding: 7px;
-    width: 174px;
+    width: 143px;
     background-color: #e37ec80d;
   }
 
@@ -52,6 +52,10 @@
     color: #aa53ef;
     font-weight: 600;
     font-size: 14px;
+  }
+
+  #itemDetails span {
+    display: none;
   }
 
   .item:hover {
@@ -132,11 +136,12 @@
   #itemDetails a :hover {
     color: #eea9ca;
   }
+
   .photo {
     width: 66%;
   }
 
-  .item  img:hover {
+  .item img:hover {
     width: 69%;
   }
 }

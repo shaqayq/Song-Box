@@ -35,7 +35,7 @@ const Detail = () => {
         </Link>
         <div className="detailCard">
           {delay && (
-          <BeatLoader color="#44beff" className="loading" />
+          <BeatLoader color="#f65ead" className="loading" />
           )}
           {!delay && (<img src={image} className="songPhoto" alt="songPhoto" />)}
 

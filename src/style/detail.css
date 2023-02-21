@@ -2,13 +2,13 @@
   .cardContainer {
     display: flex;
     flex-direction: column;
-    
   }
 
   .cardContainer a {
     margin: 0 0 9px 27px;
     text-decoration: none;
   }
+
   .detail {
     margin: 20px;
   }
@@ -46,8 +46,7 @@
     background-color: #f4dff036;
     width: 86%;
     margin: auto;
-    border-radius: 10px;
-    padding: 12px 0 10px 0; 
+    padding: 12px 0 10px 0;
   }
 
   .detailsPart h5 {
@@ -57,12 +56,13 @@
   .detailsPart h5,
   h4 {
     color: #ff3c33a3;
-  } 
+  }
+
   .loading {
     margin: 42%;
   }
 
-  .react-audio-player  {
+  .react-audio-player {
     width: 253px;
   }
 }
