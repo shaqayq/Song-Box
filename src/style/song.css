@@ -110,11 +110,14 @@
   #itemDetails a,
   i {
     text-decoration: none;
-    color: #aa53ef;
+    color: #925ebc;
     font-weight: 600;
     font-size: 18px;
   }
 
+  #itemDetails a :hover {
+    color: #eea9ca;
+  }
   .photo {
     width: 66%;
   }
