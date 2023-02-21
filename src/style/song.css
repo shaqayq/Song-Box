@@ -30,6 +30,16 @@
     margin-bottom: auto;
   }
 
+  .item h5 {
+    font-size: 85%;
+    font-weight: 700;
+  }
+
+  .item img:hover {
+    height: 108px;
+    width: 110px;
+  }
+
   #itemDetails {
     display: grid;
     grid-template-columns: auto auto;
@@ -45,7 +55,11 @@
   }
 
   .item:hover {
-    background-color: #bfe4f8;
+    background-color: #f6cff4;
+  }
+
+  #itemDetails a :hover {
+    color: #78083e;
   }
 
   .photo {
