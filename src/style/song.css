@@ -121,4 +121,8 @@
   .photo {
     width: 66%;
   }
+
+  .item  img:hover {
+    width: 69%;
+  }
 }
