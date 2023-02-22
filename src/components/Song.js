@@ -6,8 +6,6 @@ import Pagination from './Pagination';
 import '../style/song.css';
 
 const Song = () => {
-  // const [songs, setSongs] = useState([]);
-   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [songsPerPage] = useState(8);
 
@@ -17,10 +15,7 @@ const Song = () => {
 
   useEffect(() => {
     if (songList.length === 0) {
-      setLoading(true);
       dispatch(fetchSong());
-      setLoading(false);
-      // setSongs(songList);
     }
   });
 
@@ -31,7 +26,7 @@ const Song = () => {
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
- 
+
   return (
     <>
 
@@ -43,7 +38,6 @@ const Song = () => {
             order={item.order}
             music={item.music}
             id={item.song_id}
-            loading={loading}
             key={item.song_id}
           />
         ))}
