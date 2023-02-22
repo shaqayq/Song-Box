@@ -1,6 +1,6 @@
 import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaSmile, FaSadTear } from 'react-icons/fa';
+import { FaRegGrinAlt, FaRegFrown, FaMusic } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 // import ReactAudioPlayer from 'react-audio-player';
 // import { Link } from 'react-router-dom';
@@ -19,11 +19,14 @@ const PhoneItems = (song) => {
       <img src={image} className="photo" alt="songPhoto" />
       <h5>{name}</h5>
       <div id="itemDetails">
-        <Link to={`/songDetail/${id}`}>Detail</Link>
+        <Link to={`/songDetail/${id}`}>
+          <span>Detail</span>
+          <FaMusic />
+        </Link>
         <i>
-          IsOrder:
+          <b>IsOrder:</b>
           {order
-            ? <FaSmile /> : <FaSadTear />}
+            ? <FaRegGrinAlt /> : <FaRegFrown />}
 
         </i>
 

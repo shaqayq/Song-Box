@@ -28,13 +28,17 @@
   }
 
   #social i {
-    color: #a09ded;
+    color: #f55eac;
+  }
+
+  #social i :hover {
+    color: #b01183;
   }
 }
 
 @media only screen and (min-width: 640px) {
   .logo {
-    width: 25%;
+    width: 6%;
   }
 
   #logo {
@@ -43,17 +47,20 @@
   }
 
   .title {
-    color: #d76da4;
+    color: #f674b7;
+    text-shadow: 2px 0 2px #835ba8;
+    font-size: 38px;
+    font-weight: bolder;
   }
 
   #social i {
     margin: 0 15px 0 17px;
-    color: #a09ded;
+    color: #f55eac;
     font-size: 23px;
   }
 
   #social i :hover {
-    color: #fcaa09;
+    color: #b01183;
   }
 
   .navbar {

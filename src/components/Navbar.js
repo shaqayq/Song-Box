@@ -6,8 +6,8 @@ const Navbar = () => (
   <>
     <nav className="navbar shadow-sm p-3 mb-5 bg-white rounded">
       <div id="logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTi2RQUeSmpu6f6glFcDj_lE8D6F50BoRT0g&usqp=CAU" className="logo" alt="LOGO" />
-        <h4 className="title">Music Box</h4>
+        <img src="https://previews.123rf.com/images/julinzy/julinzy1304/julinzy130400067/19136652-song-note-music-icon-logo.jpg" className="logo" alt="LOGO" />
+        <h4 className="title"> Box</h4>
       </div>
       <div id="social">
         <i>
