@@ -31,6 +31,7 @@ const Song = () => {
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+ 
   return (
     <>
 
@@ -53,6 +54,7 @@ const Song = () => {
         songsPerPage={songsPerPage}
         totalSongs={songList.length}
         paginate={paginate}
+        currentNumber={currentPage}
       />
 
     </>

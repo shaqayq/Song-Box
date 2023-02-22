@@ -6,12 +6,10 @@ import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import Detail from './Detail';
 
-const PhoneItems = (song , loading) => {
+const PhoneItems = (song) => {
   // eslint-disable-next-line
   /* eslint-disable camelcase */
-  if(loading){
-    <h1>loading....</h1>
-  }
+ 
   const {
     name, image, order, id,
   } = song;
