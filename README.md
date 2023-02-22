@@ -1,6 +1,6 @@
-# Mobile Zone
+# Song Box
 
-> This is a mobile web app for the mobile store that displays the list of all the products available in this store with their details.
+> This is a Mobile and Web application that lists all the top songs with their details and every user can listen to the song or download it.
 
 ## Built With
 
@@ -13,11 +13,8 @@
 
 ## Live Demo
 
-For the live demo click [here](https://63111354be357e514f115d4b--shiny-sprite-86c43c.netlify.app/)
+For the live demo click [here]()
 
-## Project Demo
-![Home Page](https://github.com/shaqayq/Mobile-Zone/blob/project/src/assests/1.PNG)
-![Detail Page](https://github.com/shaqayq/Mobile-Zone/blob/project/src/assests/2.PNG)
 
 ## Authors
 
@@ -30,9 +27,9 @@ For the live demo click [here](https://63111354be357e514f115d4b--shiny-sprite-86
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone this repository with git clone`https://github.com/shaqayq/Mobile-Zone.git` using your terminal or command line.
+- Clone this repository with git clone`https://github.com/shaqayq/Song-Box.git` using your terminal or command line.
 - Change to the project directory by entering : <br>
-  `cd Mobile-Zone` in the terminal.
+  `cd Song-Box` in the terminal.
 
 ### Prerequisites
 
@@ -62,7 +59,7 @@ Such dependencies include webpack and linters checks, for which you have to eith
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/shaqayq/Song-Box/issues).
 
 ## Show your support
 
