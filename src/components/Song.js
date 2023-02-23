@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchSong } from '../store/Song';
 import PhoneItems from './SongItems';
 import Pagination from './Pagination';
+import {FaLessThan , FaGreaterThan} from 'react-icons/fa';
 import '../style/song.css';
 
 const Song = () => {
@@ -31,6 +32,7 @@ const Song = () => {
     <>
 
       <div className="container">
+        <div className='desktopVersion'>
         {currentSongs.map((item) => (
           <PhoneItems
             name={item.song_name}
@@ -43,7 +45,19 @@ const Song = () => {
         ))}
 
       </div>
-
+      <div className='mobileVersion'>
+      {songList.map((item) => (
+          <PhoneItems
+            name={item.song_name}
+            image={item.image}
+            order={item.order}
+            music={item.music}
+            id={item.song_id}
+            key={item.song_id}
+          />
+        ))}
+      </div>
+    </div>
       <Pagination
         songsPerPage={songsPerPage}
         totalSongs={songList.length}
