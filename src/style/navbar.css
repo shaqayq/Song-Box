@@ -1,4 +1,10 @@
 @media only screen and (max-width: 640px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden
+  }
   .navbar i {
     padding: 6px;
     color: #299bd5;
