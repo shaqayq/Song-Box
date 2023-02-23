@@ -3,7 +3,6 @@ import React from 'react';
 import { FaRegGrinAlt, FaRegFrown, FaMusic } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
 const PhoneItems = (song) => {
   // eslint-disable-next-line
   /* eslint-disable camelcase */

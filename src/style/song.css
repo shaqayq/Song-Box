@@ -1,5 +1,5 @@
 @media only screen and (max-width: 640px) {
-  .container .mobileVersion{
+  .container .mobileVersion {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -94,13 +94,13 @@
     width: 24%;
   }
 
-  .desktopVersion{
+  .desktopVersion {
     display: none;
   }
 }
 
 @media only screen and (min-width: 640px) {
-  .container .desktopVersion{
+  .container .desktopVersion {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
@@ -149,7 +149,7 @@
     width: 69%;
   }
 
-  .mobileVersion{
+  .mobileVersion {
     display: none;
   }
 }
