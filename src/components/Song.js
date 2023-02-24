@@ -31,19 +31,32 @@ const Song = () => {
     <>
 
       <div className="container">
-        {currentSongs.map((item) => (
-          <PhoneItems
-            name={item.song_name}
-            image={item.image}
-            order={item.order}
-            music={item.music}
-            id={item.song_id}
-            key={item.song_id}
-          />
-        ))}
+        <div className="desktopVersion">
+          {currentSongs.map((item) => (
+            <PhoneItems
+              name={item.song_name}
+              image={item.image}
+              order={item.order}
+              music={item.music}
+              id={item.song_id}
+              key={item.song_id}
+            />
+          ))}
 
+        </div>
+        <div className="mobileVersion">
+          {songList.map((item) => (
+            <PhoneItems
+              name={item.song_name}
+              image={item.image}
+              order={item.order}
+              music={item.music}
+              id={item.song_id}
+              key={item.song_id}
+            />
+          ))}
+        </div>
       </div>
-
       <Pagination
         songsPerPage={songsPerPage}
         totalSongs={songList.length}

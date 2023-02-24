@@ -1,5 +1,5 @@
 @media only screen and (max-width: 640px) {
-  .container {
+  .container .mobileVersion {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -93,10 +93,14 @@
     margin: auto;
     width: 24%;
   }
+
+  .desktopVersion {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 640px) {
-  .container {
+  .container .desktopVersion {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
@@ -143,5 +147,9 @@
 
   .item img:hover {
     width: 69%;
+  }
+
+  .mobileVersion {
+    display: none;
   }
 }

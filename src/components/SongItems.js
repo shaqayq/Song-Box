@@ -2,9 +2,6 @@ import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaRegGrinAlt, FaRegFrown, FaMusic } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import ReactAudioPlayer from 'react-audio-player';
-// import { Link } from 'react-router-dom';
-// import Detail from './Detail';
 
 const PhoneItems = (song) => {
   // eslint-disable-next-line
